@@ -19,6 +19,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"viewDidLoad");
+    
+    UIColor *lxyCo;
+    if (@available(iOS 11, *)) {
+        lxyCo = [UIColor colorNamed:@"lxyColor"];
+    } else {
+        lxyCo = [UIColor colorWithRed:1 green:0.99 blue:0.30 alpha:1.0];
+    }
+    
+    NSLog(@"ts");
 }
 - (IBAction)btn01Click:(id)sender {
     DriveCodeMain *driveMain = [[DriveCodeMain alloc] init];
