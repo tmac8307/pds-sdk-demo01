@@ -1,0 +1,6 @@
+framework module JDYunCardSDK {
+  umbrella header "JDYunCardSDK.h"
+
+  export *
+  module * { export * }
+}
